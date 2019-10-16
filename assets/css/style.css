@@ -1,0 +1,235 @@
+/*workdesign css page ================================================================= */
+
+body {
+    /* background-color: #ffffff; */
+    /*#f1f1f1*/
+    background-color: #50d0ff;
+    /* #222222 #8adfdc #384259 #50d0ff #384259*/
+}
+
+.container-principal {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /*width: 750px;*/
+    margin-bottom: 20%;
+    /* margin-bottom: 20%; = spacing between works word and the first card */
+}
+
+@media screen and (max-width: 768px) {
+    .container-principal {
+        margin-bottom: 45%;
+    }
+}
+
+
+/*
+.section {
+    max-width: 1000px;
+    margin: auto;
+}
+*/
+
+.bold {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 180px;
+    /* font-size: 230px; */
+    /*f-s 250px*/
+    color: #ffffff;
+    /*color: #ffe837; */
+    /*#f0f0f0*/
+    font-weight: 700;
+    /*margin: 0 0 30px 0;*/
+    line-height: 1.3;
+    /*text-align: center;*/
+    /*font-family: 'Montserrat', sans-serif;*/
+}
+
+@media screen and (max-width: 768px) {
+    .bold {
+        font-size: 70px;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (width: 320px) and (height: 568px) and (-webkit-device-pixel-ratio: 2) {
+    .bold {
+        font-size: 60px;
+        margin-top: 13%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .bold {
+        font-size: 150px;
+        margin-top: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .work_item .w_page_text {
+        padding-bottom: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .section-padding {
+        margin-top: 12%;
+    }
+}
+
+
+/*
+.content {
+    margin-top: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin-top: 40%;
+    }
+}*/
+
+
+/* Works Galley Area css ================================================================ */
+
+.work_page_inner {
+    margin-bottom: -50px;
+}
+
+.work_item {
+    margin-bottom: 50px;
+}
+
+.work_item .col-lg-6 {
+    vertical-align: middle;
+    align-self: center;
+}
+
+.work_item .w_page_img {
+    border-radius: 10px;
+}
+
+.work_item .w_page_text {
+    /* padding-top: 60px; */
+    padding-bottom: 60px;
+}
+
+.work_item .w_page_text .w_page_text_inner {
+    background: #fff;
+    padding: 75px 90px;
+    border-radius: 10px;
+}
+
+.work_item .w_page_text .w_page_text_inner.left {
+    margin-left: -67px;
+    position: relative;
+    z-index: 2;
+}
+
+.work_item .w_page_text .w_page_text_inner.right {
+    margin-right: -67px;
+    position: relative;
+    z-index: 2;
+}
+
+.work_item .w_page_text .w_page_text_inner h4 {
+    color: #222222;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.work_item .w_page_text .w_page_text_inner p {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .work_item .w_page_text .w_page_text_inner.left {
+        margin-left: auto;
+        padding: 40px 20px;
+        border-radius: 0;
+    }
+    h4 {
+        font-size: 30px !important;
+    }
+    /* p {
+        font-size: 16px !important;
+    } */
+    .work_item .w_page_text {
+        padding-top: 0;
+    }
+    #last_img {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work_item .w_page_text .w_page_text_inner.right {
+        margin-right: auto;
+        padding: 40px 20px;
+        border-radius: 0;
+    }
+    h4 {
+        font-size: 30px !important;
+    }
+    /* p {
+        font-size: 16px !important;
+    } */
+    .work_item .w_page_text {
+        padding-bottom: 0;
+    }
+}
+
+
+/* MODAL ================================================================================= */
+
+.modal,
+body.modal-open {
+    padding-right: 0!important
+}
+
+body.modal-open {
+    overflow: auto
+}
+
+body.scrollable {
+    overflow-y: auto
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.modal-content {
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        margin-top: 20%;
+    }
+}
+
+
+/* modal with video*/
+
+video {
+    width: 100% !important;
+    height: auto !important;
+}
+
+
+/* carousel ============================================================================ */
+
+
+/* i want to make them black nb. in Bootstrap 4 */
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
